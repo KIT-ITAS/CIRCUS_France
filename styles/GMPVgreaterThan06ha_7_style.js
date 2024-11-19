@@ -4,7 +4,7 @@ function categories_GMPVgreaterThan06ha_7(feature, value, size, resolution, labe
                        labelFont, labelFill, bufferColor, bufferWidth,
                        placement) {
                 var valueStr = (value !== null && value !== undefined) ? value.toString() : 'default';
-                switch(valueStr) {case 'High Suita':
+                switch(valueStr) {case 'High Suitable':
                     return [ new ol.style.Style({
         stroke: new ol.style.Stroke({color: 'rgba(248,255,31,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.988}),fill: new ol.style.Fill({color: 'rgba(248,255,31,1.0)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
@@ -12,7 +12,7 @@ function categories_GMPVgreaterThan06ha_7(feature, value, size, resolution, labe
                               bufferWidth)
     })];
                     break;
-case 'Low Suitab':
+case 'Low Suitable':
                     return [ new ol.style.Style({
         stroke: new ol.style.Stroke({color: 'rgba(178,124,61,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.988}),fill: new ol.style.Fill({color: 'rgba(178,124,61,1.0)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
@@ -20,9 +20,9 @@ case 'Low Suitab':
                               bufferWidth)
     })];
                     break;
-case 'Medium Sui':
+case 'Medium Suitable':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(253,191,111,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.988}),fill: new ol.style.Fill({color: 'rgba(253,191,111,1.0)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(235,186,79,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.988}),fill: new ol.style.Fill({color: 'rgba(235,186,79,1.0)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -30,7 +30,7 @@ case 'Medium Sui':
                     break;
 default:
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.988}),fill: new ol.style.Fill({color: 'rgba(22,92,223,1.0)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.988}),fill: new ol.style.Fill({color: 'rgba(211,75,232,1.0)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -42,7 +42,7 @@ var style_GMPVgreaterThan06ha_7 = function(feature, resolution){
         feature: feature,
         variables: {}
     };
-    var value = feature.get("Suitabilit");
+    var value = feature.get("Suitclass");
     var labelText = "";
     size = 0;
     var labelFont = "10px, sans-serif";
